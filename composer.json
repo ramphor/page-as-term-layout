@@ -1,0 +1,22 @@
+{
+    "name": "ramphor/page-as-term-layout",
+    "description": "Use page content as term layout: page builder for taxonomy, terms\u0001\u001b[1;2D\u001b[1",
+    "type": "project",
+    "license": "GPL-3.0-only",
+    "autoload": {
+        "psr-4": {
+            "Ramphor\\TermLayout\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Puleeno Nguyen",
+            "email": "puleeno@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "config": {
+        "vendor-dir": "packages"
+    }
+}
