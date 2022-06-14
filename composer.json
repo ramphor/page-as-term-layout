@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "Ramphor\\TermLayout\\": "src/"
-        }
+        },
+        "files": [
+            "./page-as-term-layout.php"
+        ]
     },
     "authors": [
         {
