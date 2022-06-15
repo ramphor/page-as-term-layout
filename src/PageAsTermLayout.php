@@ -5,10 +5,12 @@ class PageAsTermLayout
 {
     protected static $instance;
 
-    private function __construct() {
+    private function __construct()
+    {
     }
 
-    public static function getInstance() {
+    public static function getInstance()
+    {
         if (is_null(static::$instance)) {
             static::$instance = new static();
         }
