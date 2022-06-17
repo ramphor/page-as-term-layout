@@ -6,7 +6,7 @@
  * Version: 1.0
  */
 
-if (defined('PAGE_AS_TERM_LAYOUT')) {
+if (!defined('PAGE_AS_TERM_LAYOUT')) {
     define('PAGE_AS_TERM_LAYOUT', __FILE__);
 }
 
