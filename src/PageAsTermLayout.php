@@ -5,6 +5,8 @@ class PageAsTermLayout
 {
     protected static $instance;
 
+    const CONFIG_FILE_PATH = 'ramphor/configs/page-as-term-layout.php';
+
     private function __construct()
     {
         $this->loadModules();
@@ -33,5 +35,14 @@ class PageAsTermLayout
         if (is_admin()) {
             add_action('current_screen', [$referenceManager, 'createMetaOnEditScreen']);
         }
+    }
+
+    public static function getConfigFilePath()
+    {
+        return sprintf(
+            '%s/%s',
+            rtrim(WP_CONTENT_DIR, '/'),
+            static::CONFIG_FILE_PATH
+        );
     }
 }

@@ -3,6 +3,7 @@
 namespace Ramphor\TermLayout\Setup;
 
 use Exception;
+use Ramphor\TermLayout\PageAsTermLayout;
 
 class PageAsTermLayoutStructure
 {
@@ -42,8 +43,33 @@ class PageAsTermLayoutStructure
         }
     }
 
+    protected static function getPublicTaxonomies()
+    {
+        $taxonomies = get_taxonomies([
+            'public' => true,
+        ]);
+
+        return apply_filters(
+            'ramphor/term/layout/page/on_taxonomies',
+            array_keys($taxonomies)
+        );
+    }
+
+    protected static function generateFileConfig()
+    {
+        $configs = [
+            'post_type' => 'page',
+            'enable' => true,
+            'taxonomies' => static::getPublicTaxonomies(),
+        ];
+
+        $configWriter = new ConfigWriter($configs, PageAsTermLayout::getConfigFilePath());
+        $configWriter->write();
+    }
+
     public static function active()
     {
         static::createDatabaseTable();
+        static::generateFileConfig();
     }
 }
