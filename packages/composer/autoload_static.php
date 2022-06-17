@@ -15,12 +15,20 @@ class ComposerStaticInit4d6d5290d3f9cd04b6d1c9d180ca2878
         array (
             'Ramphor\\TermLayout\\' => 19,
         ),
+        'J' => 
+        array (
+            'Jankx\\Abstractions\\' => 19,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Ramphor\\TermLayout\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Jankx\\Abstractions\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jankx/abstractions/src',
         ),
     );
 
