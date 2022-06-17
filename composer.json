@@ -18,7 +18,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "jankx/abstractions": "dev-master"
+    },
     "config": {
         "vendor-dir": "packages"
     }

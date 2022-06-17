@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e54d72985bc301d3bb08ed35098f6300",
+    "packages": [
+        {
+            "name": "jankx/abstractions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jankx/abstractions.git",
+                "reference": "f8be914ce9a0860b09d4768e8ed612199895dcce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jankx/abstractions/zipball/f8be914ce9a0860b09d4768e8ed612199895dcce",
+                "reference": "f8be914ce9a0860b09d4768e8ed612199895dcce",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jankx\\Abstractions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Puleeno Nguyen",
+                    "email": "puleeno@gmail.com"
+                }
+            ],
+            "description": "Create base module structure to build more features for your WordPress site",
+            "support": {
+                "issues": "https://github.com/jankx/abstractions/issues",
+                "source": "https://github.com/jankx/abstractions/tree/master"
+            },
+            "time": "2021-08-01T16:49:21+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "jankx/abstractions": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
